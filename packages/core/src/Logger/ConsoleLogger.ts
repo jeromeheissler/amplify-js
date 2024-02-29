@@ -44,7 +44,7 @@ export class ConsoleLogger implements Logger {
 		const dt = new Date();
 
 		return (
-			[this._padding(dt.getMinutes()), this._padding(dt.getSeconds())].join(
+			[this._padding(dt.getHours()), this._padding(dt.getMinutes()), this._padding(dt.getSeconds())].join(
 				':',
 			) +
 			'.' +
